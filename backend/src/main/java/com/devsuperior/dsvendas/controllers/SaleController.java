@@ -27,7 +27,7 @@ public class SaleController {
 		return ResponseEntity.ok(list);
 	}
 	
-	@GetMapping(value = "amount/-by-seller")
+	@GetMapping(value = "amount-by-seller")
 	public ResponseEntity<List<SaleSumDTO>> amountGroupeBySeller() {
 		List<SaleSumDTO> list = service.amountGroupedBySeller();
 		return ResponseEntity.ok(list);
